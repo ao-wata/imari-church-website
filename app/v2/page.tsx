@@ -1,21 +1,31 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function HomeV2() {
   return (
     <>
 
       {/* Hero Section */}
-      <section id="welcome" className="relative bg-gradient-to-br from-primary via-primary to-secondary py-32 md:py-40">
-        <div className="container mx-auto px-4">
+      <section id="welcome" className="relative bg-gradient-to-br from-primary via-primary to-secondary py-32 md:py-40 overflow-hidden">
+        <div className="absolute inset-0 opacity-20">
+          <Image
+            src="/images/church.jpg"
+            alt="伊万里いのちのことばキリスト教会"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        <div className="relative container mx-auto px-4">
           <div className="max-w-5xl mx-auto text-center text-white">
-            <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            <h2 className="text-5xl md:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">
               Welcome
             </h2>
-            <p className="text-2xl md:text-3xl mb-8 font-light opacity-95">
+            <p className="text-2xl md:text-3xl mb-8 font-light drop-shadow-lg">
               あなたを心から歓迎します
             </p>
             <div className="w-24 h-1 bg-white/50 mx-auto mb-12"></div>
-            <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto opacity-90">
+            <p className="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto drop-shadow-lg">
               伊万里いのちのことばキリスト教会へようこそ。<br />
               どなたでも大歓迎です。お気軽にお越しください。
             </p>
@@ -23,25 +33,35 @@ export default function HomeV2() {
         </div>
       </section>
 
-      {/* Welcome Message */}
+      {/* Welcome Message with Church Image */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gray-50 border-l-4 border-secondary p-10">
-              <h2 className="text-3xl font-bold text-primary mb-6 text-center">
-                伊万里いのちのことばキリスト教会へようこそ
-              </h2>
-              <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
-                <p>
-                  私たちの教会は、聖書の教えに基づき、イエス・キリストの愛を伝えるプロテスタントの教会です。
-                </p>
-                <p>
-                  年齢、性別、国籍に関わらず、すべての方を心から歓迎しています。
-                  初めての方も安心してお越しください。
-                </p>
-                <p>
-                  聖書のメッセージを通して、神様の愛と平安を共に分かち合いましょう。
-                </p>
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-8 items-center">
+              <div className="relative h-[400px] md:h-[500px]">
+                <Image
+                  src="/images/church.jpg"
+                  alt="伊万里いのちのことばキリスト教会"
+                  fill
+                  className="object-cover shadow-lg"
+                />
+              </div>
+              <div className="bg-gray-50 border-l-4 border-secondary p-10">
+                <h2 className="text-3xl font-bold text-primary mb-6">
+                  伊万里いのちのことばキリスト教会へようこそ
+                </h2>
+                <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
+                  <p>
+                    私たちの教会は、聖書の教えに基づき、イエス・キリストの愛を伝えるプロテスタントの教会です。
+                  </p>
+                  <p>
+                    年齢、性別、国籍に関わらず、すべての方を心から歓迎しています。
+                    初めての方も安心してお越しください。
+                  </p>
+                  <p>
+                    聖書のメッセージを通して、神様の愛と平安を共に分かち合いましょう。
+                  </p>
+                </div>
               </div>
             </div>
           </div>

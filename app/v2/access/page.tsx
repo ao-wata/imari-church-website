@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function AccessPage() {
   return (
     <>
@@ -37,6 +39,15 @@ export default function AccessPage() {
                   </div>
                 </div>
               </div>
+            </div>
+
+            <div className="relative h-96 mb-8 border border-gray-200">
+              <Image
+                src="/images/church.jpg"
+                alt="伊万里いのちのことばキリスト教会"
+                fill
+                className="object-cover"
+              />
             </div>
 
             <div className="bg-gray-100 h-96 flex items-center justify-center border border-gray-200 mb-8">

@@ -1,0 +1,11 @@
+# 画像ファイルをここに配置してください
+
+## 配置例:
+- church.jpg - 教会の外観写真
+- pastor.jpg - 牧師の写真
+- hero.jpg - ヒーローセクションの背景画像
+
+## 使用方法:
+画像を配置後、コードで以下のように参照できます：
+- `/images/church.jpg`
+- `/images/pastor.jpg`
